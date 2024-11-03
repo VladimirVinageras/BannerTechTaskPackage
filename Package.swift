@@ -5,7 +5,9 @@ let package = Package(
     name: "BannerTechTaskPackage",
     platforms: [.iOS(.v12)],
     products: [
-        .library(name: "BannerTechTaskPackage", targets: ["BannerTechTaskPackage"]
+        .library(
+            name: "BannerTechTaskPackage",
+            targets: ["BannerTechTaskPackage"]
         ),
     ],
     targets: [

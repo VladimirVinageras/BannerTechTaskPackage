@@ -7,7 +7,7 @@
 import Foundation
 import UIKit
 
-class BannerTechTaskViewController: UIViewController {
+public class BannerTechTaskViewController: UIViewController {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
@@ -100,7 +100,7 @@ class BannerTechTaskViewController: UIViewController {
         return view
     }()
 
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .black
         setupView()

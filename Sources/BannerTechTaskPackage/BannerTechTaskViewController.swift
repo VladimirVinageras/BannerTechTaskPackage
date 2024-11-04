@@ -77,6 +77,7 @@ public class BannerTechTaskViewController: UIViewController {
         let stackView = UIStackView(arrangedSubviews: [titleLabel, descriptionLabel])
         stackView.axis = .vertical
         stackView.alignment = .leading
+        stackView.distribution = .fillProportionally
         stackView.spacing = 8
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
@@ -161,7 +162,9 @@ public class BannerTechTaskViewController: UIViewController {
             mainStackView.topAnchor.constraint(equalTo: containerView.topAnchor, constant: 14),
             mainStackView.bottomAnchor.constraint(equalTo: containerView.bottomAnchor, constant: -14),
             mainStackView.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 20),
-            mainStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20)
+            mainStackView.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -20),
+            
+            textStackView.widthAnchor.constraint(equalToConstant: 186)
         ])
     }
 }
